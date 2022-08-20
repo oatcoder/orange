@@ -1,0 +1,22 @@
+runtime_config:
+  runtime:
+    python:
+      version: 3
+  env: 
+    prod: false
+
+resources:
+  api:
+    food:
+      prod:
+        port: 0
+        address: "candybar-208003.appspot.com"
+        root: "food"
+      dev:
+        port: 8080
+        address: "127.0.0.1"
+        root: "food"
+
+database:
+  port: 27017
+  address: "mongodb://192.168.1.190"
